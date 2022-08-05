@@ -14,7 +14,7 @@ function draw() {
     if (img && img.width > 0) {
         console.log(img);
         let w, h;
-        if (img.width > img.height) {
+        if (img.width > img.height && height > width) {
             w = width;
             h = (width * img.height) / img.width;
         } else {
